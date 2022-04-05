@@ -1,19 +1,13 @@
 <?php
 
-echo "entrou no index";
-
-define('BOT_TOKEN', '5163302255:AAFi6vTDzf8SHycI-2WjPRgrwwndpeDDZ7o');
-define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
-
-
 function processMessage($message) {
     // processa a mensagem recebida
 
-    $servername = "mysql.hostinger.co.uk";
-    $database = "u469774850_Webhook";
-    $username = "u469774850_root";
-    $password = "Odara91971802@";
-    $sql = "mysql:host=$servername;dbname=$database;";
+    $servername = "servername";
+    $database = "database";
+    $username = "username";
+    $password = "password";
+    $sql = "sql";
     $dsn_Options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
 
     try {
